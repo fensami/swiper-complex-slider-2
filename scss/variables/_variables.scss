@@ -1,0 +1,63 @@
+/* =================
+    Theme Base
+   =================*/
+
+   :root {
+    --color-primary: #FA1AE4;
+    --color-secondary: #000D38;
+    --color-paragraph: #7B7E86;
+    --color-white: #ffffff;
+    --color-white2: #D9D9D9;
+    --color-white3: #F1EFFC;
+    --color-white4: #F6F2F2;
+    --color-white5: #E4E4E4;
+    --color-white6: #FFF6E9;
+    --color-white7: #FCF4F4;
+    --color-white8: #F9F0F0;
+    --color-white9: #D2D2D2;
+    --color-black: #000;
+    --color-black2: #27272c;
+    --color-fashion: #AC27C4;
+    --color-musics: #FD3A98;
+    --color-sports: #213873;
+    --color-helth: #078871;
+    --color-sculpture: #FE6741;
+    --color-advacer: #1501FF;
+    --color-political: #F00;
+    --color-animal: #1F7E34;
+    --color-travel: #F93;
+    --color-green: #07382E;
+    --title-font: "Playfair Display", serif;
+    --body-font: "Cabin", sans-serif;
+    --dark-mode: #0b1020
+  }
+  
+  //   Color
+  $color-primary: var(--color-primary);
+  $color-secondary: var(--color-secondary);
+  $color-paragraph: var(--color-paragraph);
+  $color-white: var(--color-white);
+  $color-white2: var(--color-white2);
+  $color-white3: var(--color-white3);
+  $color-white4: var(--color-white4);
+  $color-white5: var(--color-white5);
+  $color-white6: var(--color-white6);
+  $color-white7: var(--color-white7);
+  $color-white8: var(--color-white8);
+  $color-white9: var(--color-white9);
+  $color-black: var(--color-black);
+  $color-black2: var(--color-black2);
+  $color-fashion: var(--color-fashion);
+  $color-musics: var(--color-musics);
+  $color-sports: var(--color-sports);
+  $color-helth: var(--color-helth);
+  $color-sculpture: var(--color-sculpture);
+  $color-advacer: var(--color-advacer);
+  $color-political: var(--color-political);
+  $color-animal: var(--color-animal);
+  $color-travel: var(--color-travel);
+  $color-green: var(--color-green);
+  $title-font: var(--title-font);
+  $body-font: var(--body-font);
+  $body-dark-mode: var(--body-dark-mode);
+

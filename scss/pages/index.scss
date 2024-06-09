@@ -1,0 +1,188 @@
+@use "../autoprefixer/autoprefixer" as *;
+@use "../variables/variables" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+
+.trending-posts-swiper2 {
+  position: relative;
+
+  .swiper-wrapper {
+    .swiper-slide {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+/*=======================
+   Tranding Post Wrapper
+  =======================*/
+.trending-posts-wrapper {
+  width: 97%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.trending-post-card {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50px;
+  padding: 300px 20px 300px 20px;
+
+  .news-blog-content {
+    padding: 0;
+
+    .blog-title {
+      margin-top: 30px;
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 40px;
+      text-transform: capitalize;
+      width: 100% !important;
+      margin-bottom: 50px;
+      a{
+        color: $color-white;
+      }
+    }
+
+    .news-date-admin {
+      margin-top: 20px;
+    }
+  }
+}
+
+
+.trending-posts-swiper2 {
+  position: relative;
+
+  .swiper-wrapper {
+    .swiper-slide {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.post-mini-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  overflow: hidden;
+  cursor: pointer;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.trending-posts-swiper {
+  padding-left: 40px;
+  position: absolute;
+  top: 164px;
+  right: 68px;
+  display: none;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    content: "";
+    border-radius: 2.5px;
+    background: #BFBFBF;
+    height: 100%;
+    width: 5px;
+  }
+
+  .swiper-slide {
+    width: 100% !important;
+
+    &.swiper-slide-thumb-active {
+      img {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+      }
+    }
+  }
+
+  .swiper-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.trending-posts-swiper-button {
+  position: absolute;
+  bottom: 170px;
+  left: 108px;
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 80px;
+    height: 80px;
+
+    background: $color-white8;
+    color: $color-paragraph;
+    border-radius: 100px;
+    font-family: $title-font;
+    font-size: 25px;
+    line-height: 35px;
+    font-weight: 500;
+    @include transition;
+
+    &:hover {
+      background: $color-secondary;
+      color: $color-white;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.swiper-container {
+  width: 50%;
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+
+  .swiper-wrapper {
+    -webkit-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
+    position: relative;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 33px;
+    @include d-flex;
+    @include justify-content-center;
+    @include align-items;
+    width: auto;
+    position: relative;
+    overflow: hidden;
+
+  }
+}
